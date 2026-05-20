@@ -1,0 +1,47 @@
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+#navigation .nav-item{
+    border-right: 1px solid #eee;
+    padding:15px;
+}
+#navigation .nav-item:first-child{
+    border-left: 1px solid #eee;
+}
+nav li{
+    position: relative;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+}
+nav li::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #E8A1AA;
+    transition: .3s;
+}
+/* hover و active */
+nav li:hover::before,
+nav li.active::before{
+    width: 100%;
+}
+.Search-icon a i:hover{
+    color: #E8A1AA;
+}
+/*Footer*/
+footer .address i{
+    color: #000;
+}
+footer a , footer p i , footer span{
+    color:#f0b0b9;
+}
+footer a:hover{
+    text-decoration: underline !important;
+}
+
